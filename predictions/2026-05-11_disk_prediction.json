@@ -1,0 +1,123 @@
+{
+  "metadata": {
+    "generated_at": "2026-05-11T05:20:34Z",
+    "prediction_date": "2026-05-11",
+    "model_name": "Model 4 (Ranger)",
+    "model_version": "v3.0.17",
+    "rolling_window_days": 30,
+    "days_of_history": 63,
+    "tiers": [
+      "M_plus",
+      "M5_plus",
+      "X_plus"
+    ],
+    "budgets": [
+      "1pct",
+      "5pct",
+      "10pct",
+      "20pct",
+      "30pct"
+    ],
+    "note": "Disk-level global alert. Rolling 30-day budget threshold \u2014 zero forward bias. No per-AR attribution."
+  },
+  "disk_alert": {
+    "M_plus": {
+      "max_probability": 0.836237,
+      "1pct": {
+        "alert": 0,
+        "threshold": 0.955053,
+        "history_days_above": 2
+      },
+      "5pct": {
+        "alert": 0,
+        "threshold": 0.930661,
+        "history_days_above": 4
+      },
+      "10pct": {
+        "alert": 0,
+        "threshold": 0.918656,
+        "history_days_above": 5
+      },
+      "20pct": {
+        "alert": 1,
+        "threshold": 0.72049,
+        "history_days_above": 6
+      },
+      "30pct": {
+        "alert": 1,
+        "threshold": 0.660547,
+        "history_days_above": 8
+      }
+    },
+    "M5_plus": {
+      "max_probability": 0.544045,
+      "1pct": {
+        "alert": 0,
+        "threshold": 0.925198,
+        "history_days_above": 2
+      },
+      "5pct": {
+        "alert": 0,
+        "threshold": 0.869756,
+        "history_days_above": 5
+      },
+      "10pct": {
+        "alert": 0,
+        "threshold": 0.842003,
+        "history_days_above": 6
+      },
+      "20pct": {
+        "alert": 0,
+        "threshold": 0.746557,
+        "history_days_above": 7
+      },
+      "30pct": {
+        "alert": 1,
+        "threshold": 0.499857,
+        "history_days_above": 10
+      }
+    },
+    "X_plus": {
+      "max_probability": 0.58667,
+      "1pct": {
+        "alert": 0,
+        "threshold": 0.898918,
+        "history_days_above": 1
+      },
+      "5pct": {
+        "alert": 0,
+        "threshold": 0.845382,
+        "history_days_above": 2
+      },
+      "10pct": {
+        "alert": 0,
+        "threshold": 0.825561,
+        "history_days_above": 4
+      },
+      "20pct": {
+        "alert": 0,
+        "threshold": 0.618786,
+        "history_days_above": 5
+      },
+      "30pct": {
+        "alert": 1,
+        "threshold": 0.558541,
+        "history_days_above": 9
+      }
+    }
+  },
+  "threshold_stability": {
+    "M_plus": {
+      "7d_shift_pct": 0.0,
+      "stable": "True"
+    },
+    "M5_plus": {
+      "7d_shift_pct": 0.0,
+      "stable": "True"
+    },
+    "X_plus": {
+      "7d_shift_pct": 0.0,
+      "stable": "True"
+    }
+  }
+}

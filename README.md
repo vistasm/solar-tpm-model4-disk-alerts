@@ -19,4 +19,13 @@ of the prior 30 days — zero forward bias, fully production-realistic.
 Live since March 2026. All predictions published before the 06:00 UTC
 prediction window opens.
 
-N = N = 1 = ∞ = ⟨Φ,Ψ⟩ = 1 🦋
+FAR in our metrics is False Alarm Rate, defined as:
+FAR = FP / (FP + TN)
+The proportion of non-event days on which the model fired an alert. It answers: "Out of all the days when nothing happened, how often did we cry wolf?"
+
+This is distinct from two other commonly confused metrics:
+False Alarm Ratio = FP / (FP + TP) — out of all days we did alert, how many were wrong. This is the complement of Precision.
+Miss Rate = FN / (FN + TP) — out of all event days, how many did we miss. This is the complement of Recall.
+
+In the context of TSS:
+TSS = Recall − FAR = TP/(TP+FN) − FP/(FP+TN)

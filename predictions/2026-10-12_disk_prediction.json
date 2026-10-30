@@ -1,0 +1,126 @@
+{
+  "metadata": {
+    "generated_at": "2026-10-30T18:05:21Z",
+    "prediction_date": "2026-10-12",
+    "model_name": "Model 4 (Ranger)",
+    "model_version": "v3.0.17",
+    "rolling_window_days": 30,
+    "days_of_history": 217,
+    "tiers": [
+      "M_plus",
+      "M5_plus",
+      "X_plus"
+    ],
+    "budgets": [
+      "1pct",
+      "5pct",
+      "10pct",
+      "20pct",
+      "30pct"
+    ],
+    "note": "Disk-level global alert. Rolling 30-day budget threshold \u2014 zero forward bias. No per-AR attribution."
+  },
+  "disk_alert": {
+    "M_plus": {
+      "max_probability": 0.903149,
+      "1pct": {
+        "alert": 0,
+        "threshold": 0.918666,
+        "n_alerts_in_prior_window": 2
+      },
+      "5pct": {
+        "alert": 0,
+        "threshold": 0.91634,
+        "n_alerts_in_prior_window": 5
+      },
+      "10pct": {
+        "alert": 0,
+        "threshold": 0.914303,
+        "n_alerts_in_prior_window": 5
+      },
+      "20pct": {
+        "alert": 1,
+        "threshold": 0.582285,
+        "n_alerts_in_prior_window": 7
+      },
+      "30pct": {
+        "alert": 1,
+        "threshold": 0.422038,
+        "n_alerts_in_prior_window": 9
+      }
+    },
+    "M5_plus": {
+      "max_probability": 0.897788,
+      "1pct": {
+        "alert": 0,
+        "threshold": 0.96489,
+        "n_alerts_in_prior_window": 2
+      },
+      "5pct": {
+        "alert": 0,
+        "threshold": 0.928734,
+        "n_alerts_in_prior_window": 4
+      },
+      "10pct": {
+        "alert": 0,
+        "threshold": 0.901763,
+        "n_alerts_in_prior_window": 5
+      },
+      "20pct": {
+        "alert": 1,
+        "threshold": 0.466606,
+        "n_alerts_in_prior_window": 7
+      },
+      "30pct": {
+        "alert": 1,
+        "threshold": 0.284457,
+        "n_alerts_in_prior_window": 8
+      }
+    },
+    "X_plus": {
+      "max_probability": 0.904154,
+      "1pct": {
+        "alert": 0,
+        "threshold": 0.904629,
+        "n_alerts_in_prior_window": 5
+      },
+      "5pct": {
+        "alert": 1,
+        "threshold": 0.889802,
+        "n_alerts_in_prior_window": 5
+      },
+      "10pct": {
+        "alert": 1,
+        "threshold": 0.786814,
+        "n_alerts_in_prior_window": 5
+      },
+      "20pct": {
+        "alert": 1,
+        "threshold": 0.431423,
+        "n_alerts_in_prior_window": 5
+      },
+      "30pct": {
+        "alert": 1,
+        "threshold": 0.410108,
+        "n_alerts_in_prior_window": 7
+      }
+    }
+  },
+  "threshold_stability": {
+    "M_plus": {
+      "7d_shift_pct": 112.5,
+      "stable": "False",
+      "note": "threshold shifted >15% in 7d \u2014 retrain may have changed score distribution"
+    },
+    "M5_plus": {
+      "7d_shift_pct": 133.1,
+      "stable": "False",
+      "note": "threshold shifted >15% in 7d \u2014 retrain may have changed score distribution"
+    },
+    "X_plus": {
+      "7d_shift_pct": 80.1,
+      "stable": "False",
+      "note": "threshold shifted >15% in 7d \u2014 retrain may have changed score distribution"
+    }
+  }
+}
